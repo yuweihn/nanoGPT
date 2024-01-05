@@ -7,6 +7,6 @@ for data in datas:
     with open(data, 'r', encoding='utf-8') as fp:
         poets = json.load(fp)
         for poet in poets:
-            with open("input.txt", "a", encoding="utf-8") as f:
+            with open("poetry.txt", "a", encoding="utf-8") as f:
                 f.write(''.join(poet['paragraphs']))
                 f.write("\n")
