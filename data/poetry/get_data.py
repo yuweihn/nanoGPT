@@ -2,7 +2,8 @@
 import glob
 import json
 
-datas = glob.glob("../../chinese-poetry/全唐诗/poet.*.json")
+# datas = glob.glob("../../chinese-poetry/全唐诗/poet.*.json");
+datas = glob.glob("../../chinese-poetry/曹操诗集/*.json");
 for data in datas:
     with open(data, 'r', encoding='utf-8') as fp:
         poets = json.load(fp)
